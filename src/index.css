@@ -1,0 +1,48 @@
+.App-logo {
+  width: 50px;
+  margin-left: 50px;
+}
+.navbar {
+  padding: 10px;
+}
+#navbarSupportedContent li a {
+  width: 150px;
+  text-align: center;
+}
+#navbarSupportedContent {
+  margin-left: 25%;
+}
+span {
+  border-right: 1px solid rgba(95, 95, 95, 0.429);
+  height: 20px;
+  margin-top: 10px;
+}
+.visitor-preview h2{
+  color: blue;
+}
+.visitor-preview p{
+  margin-left: 20px;
+}
+tbody tr td {
+  border: 1px solid black;
+  text-align: center;
+}
+table thead th {
+  border: 1px solid black;
+  text-align: center;
+}
+table thead {
+  background-color: rgba(104, 94, 94, 0.596);
+}
+.btn i {
+  font-size: 25px;
+  text-decoration: none;
+}
+#submit {
+  width: 120px;
+}
+.fa {
+  border-radius: 10px;
+  box-shadow: 0px 24px 9px 0px #000000c0;
+  height: 13px;
+}
