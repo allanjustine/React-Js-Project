@@ -12,11 +12,11 @@
 #navbarSupportedContent {
   margin-left: 25%;
 }
-span {
-  border-right: 1px solid rgba(95, 95, 95, 0.429);
-  height: 20px;
-  margin-top: 10px;
-}
+  span {
+    border-right: 1px solid rgba(95, 95, 95, 0.429);
+    height: 20px;
+    margin-top: 10px;
+  }
 .visitor-preview h2{
   color: blue;
 }

@@ -1,3 +1,4 @@
+import {useEffect, useState} from 'react';
 import VisitorIndex from './VisitorIndex';
 
 const Home = () => {
@@ -7,7 +8,6 @@ const Home = () => {
 
     // useEffect(() => {
     //     console.log('use effect ran');
-    //     console.log(visitors);
     // }, [name]);
     return (
         <div className="home">
