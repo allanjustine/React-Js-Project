@@ -74,7 +74,7 @@ table thead th {
 }
 #sidebar {
   background-color: rgb(3, 102, 121);
-  display: ease;
+  box-shadow: 4px 0px 10px #232931;
 }
 .nav-link .ms-1{
   color: rgb(196, 239, 244);
