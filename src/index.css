@@ -54,6 +54,11 @@ table thead th {
   font-size: 14px;
   font-family: "Old English Text MT";
 }
+.brandd1 {
+  font-family: "Old English Text MT";
+  color: rgb(4, 9, 160);
+  font-size: 100px;
+}
 #tag {
   border-bottom: 1px solid rgba(218, 216, 216, 0.56);
 }
@@ -132,4 +137,36 @@ table thead th {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #47cee3; 
+}
+.home {
+  background-image: url(./assets/mdc-memorial-wall.png);
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  margin-top: -10px;
+  overflow: hidden;
+}
+#card-bodyyy {
+  background-color: #47cee3;
+  color: white;
+  height: 170px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#card-bodyyy p{
+  color: black;
+  font-weight: 500;
+}
+#card-bodyyy:hover {
+  background-color: #23a7bb;
+  transform: scale(1.02);
+  transition: transform ease 0.5s;
+}
+#dash-icon {
+  font-size: 50px;
+  color: #00444f;
+}
+#cardd {
+  border-radius: 10px;
 }

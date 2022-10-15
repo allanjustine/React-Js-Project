@@ -18,7 +18,7 @@ function App() {
                   <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0" id="sidebar">
                       <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                           <a href="/" id="tag" class="d-flex align-items-center pb-1 mb-md-0 me-md-auto text-white text-decoration-none">
-                          <img className='logoo' src={logo}></img><span class="fs-5 d-none d-sm-inline mt-3"><p className="brandd">Mater Dei College</p></span>
+                          <img className='logoo' src={logo} title="MDC logo"></img><span class="fs-5 d-none d-sm-inline mt-3"><p className="brandd">Mater Dei College</p></span>
                           </a>
                           <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                               <li class="nav-item">
@@ -28,7 +28,7 @@ function App() {
                               </li>
                               <li class="nav-item">
                                   <a href="/visitors" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                      <i class="fa fa-list-alt" aria-hidden="true" id="iconn"></i> <span class="ms-1 d-none d-sm-inline">Visitors</span> </a>
+                                      <i class="fa fa-user" aria-hidden="true" id="iconn"></i> <span class="ms-1 d-none d-sm-inline">Visitors</span> </a>
                               </li>
                               <li class="nav-item">
                                   <a href="/venues" class="nav-link px-0 align-middle">

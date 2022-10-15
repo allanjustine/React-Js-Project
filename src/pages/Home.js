@@ -1,6 +1,3 @@
-import {useEffect, useState} from 'react';
-import VisitorIndex from '../visitor-pages/VisitorIndex';
-
 const Home = () => {
 
     // const [name, setName] = useState('allan');
@@ -13,7 +10,7 @@ const Home = () => {
         <div className="home">
             {/* <button className="btn btn-primary" onClick={() => setName('justine')}>Change name</button>
             <p>{name}</p> */}
-            <h1>Home</h1>
+            <h1 className="brandd1 text-center mt-5">Mater Dei College</h1>
         </div>
     );
 }
