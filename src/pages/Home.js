@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import VisitorIndex from './VisitorIndex';
+import VisitorIndex from '../visitor-pages/VisitorIndex';
 
 const Home = () => {
 
@@ -11,9 +11,9 @@ const Home = () => {
     // }, [name]);
     return (
         <div className="home">
-            <VisitorIndex />
             {/* <button className="btn btn-primary" onClick={() => setName('justine')}>Change name</button>
             <p>{name}</p> */}
+            <h1>Home</h1>
         </div>
     );
 }

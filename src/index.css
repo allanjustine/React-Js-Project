@@ -5,33 +5,42 @@
 .navbar {
   padding: 10px;
 }
+#menu {
+  margin-top: 10px;
+}
 #navbarSupportedContent li a {
   width: 150px;
   text-align: center;
 }
 #navbarSupportedContent {
-  margin-left: 25%;
+  margin-left: 20%;
 }
-  span {
-    border-right: 1px solid rgba(95, 95, 95, 0.429);
-    height: 20px;
-    margin-top: 10px;
-  }
+#line {
+  border-right: 1px solid rgba(95, 95, 95, 0.429);
+  height: 20px;
+  margin-top: 10px;
+}
 .visitor-preview h2{
   color: blue;
 }
 .visitor-preview p{
   margin-left: 20px;
 }
+.tbody .tr .td {
+  border: 1px solid rgb(96, 95, 95);
+  text-align: center;
+}
+#table .thead .th {
+  border: 1px solid rgb(116, 113, 113);
+  text-align: center;
+}
 tbody tr td {
-  border: 1px solid black;
   text-align: center;
 }
 table thead th {
-  border: 1px solid black;
   text-align: center;
 }
-table thead {
+#table .thead {
   background-color: rgba(104, 94, 94, 0.596);
 }
 .btn i {
@@ -41,8 +50,65 @@ table thead {
 #submit {
   width: 120px;
 }
-.fa {
+.brandd {
+  font-size: 14px;
+  font-family: "Old English Text MT";
+}
+#tag {
+  border-bottom: 1px solid rgba(218, 216, 216, 0.56);
+}
+#del {
   border-radius: 10px;
   box-shadow: 0px 24px 9px 0px #000000c0;
   height: 13px;
+}
+.logoo {
+  width: 35px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+#sidebar {
+  background-color: rgb(3, 102, 121);
+  display: ease;
+}
+.nav-link .ms-1{
+  color: rgb(196, 239, 244);
+}
+.nav-link .ms-1:hover{
+  color: rgb(242, 242, 242);
+}
+#iconn {
+  color: rgb(196, 239, 244);
+}
+#iconn:hover {
+  color: rgb(242, 242, 242);
+}
+#titlee {
+  font-size: 15px;
+  font-weight: bold;
+}
+#bodyy {
+  background-color: rgb(185, 251, 251);
+}
+#card {
+  background-color: rgb(185, 251, 251);
+}
+.nav-item {
+  margin-top: 3px;
+}
+#sched-table {
+  font-size: 14px;
+}
+#unavailable {
+  font-size: 60px;
+}
+#loading {
+  font-size: 40px;
+}
+.view {
+  font-size: 22px;
+  color: black;
+}
+.view:hover {
+  color: rgba(3, 3, 3, 0.626);
 }
