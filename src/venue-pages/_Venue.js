@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 const _Venue = () => {
   const { id } = useParams();
   const [venue, setVenue] = useState(true);
-  const [schedule, setSchedule] = useState(true);  
+  const [schedules, setSchedule] = useState(true);  
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
 
@@ -36,7 +36,7 @@ const _Venue = () => {
     <div>
       <div className="row">
         <div className="col-md-3">
-          <div className="card">
+          <div className="card shadow">
             <div className="card-header bg-info">
             <p className="text-center mt-2"><h6>{venue.building} Building</h6></p>
             </div>
@@ -51,13 +51,13 @@ const _Venue = () => {
           </div>
         </div>
         <div className="col-md-9">
-        {schedule && (
+        {schedules && (
           <div className="card" id="card">
           <h1 className="text-center mt-2">
-          {schedule ? "Schedules" : "No Schedule Found"}
+          {schedules ? "Schedules" : "No Schedule Found"}
             </h1>
             <hr />
-          <div className="card-body" style={{ height: "75vh", overflow: "auto" }}>
+          <div className="card-body shadow" style={{ height: "75vh", overflow: "auto" }}>
           <table id="sched-table" className="table table-striped table-hover table-bordered">
             <thead className="bg-info">
               <tr>
@@ -76,15 +76,15 @@ const _Venue = () => {
             {isPending && (
            <tr><td colSpan="6"> <i class="fa fa-spinner" aria-hidden="true" id="loading"><h2>Loading...</h2></i> </td></tr>
             )}
-              {Object.keys(schedule)?.map((sched) => {
+              {Object.keys(schedules)?.map((sched) => {
                 return (
                     <tr key={sched}>
-                      <td>{schedule[sched].id}</td>
-                      <td>{schedule[sched].course_no}</td>
-                      <td>{schedule[sched].description}</td>
-                      <td>{schedule[sched].schedule}</td>
-                      <td>{schedule[sched].size}</td>
-                      <td>{schedule[sched].teacher}</td>
+                      <td>{schedules[sched].id}</td>
+                      <td>{schedules[sched].course_no}</td>
+                      <td>{schedules[sched].description}</td>
+                      <td>{schedules[sched].schedule}</td>
+                      <td>{schedules[sched].size}</td>
+                      <td>{schedules[sched].teacher}</td>
                     </tr>
                 );
               })}
