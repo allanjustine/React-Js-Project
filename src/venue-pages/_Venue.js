@@ -10,7 +10,7 @@ const _Venue = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch(`https://sis.materdeicollege.com/api/venues/${id}`)
+      fetch(`https://sis.materdeicollege.com/api/venues/` + id)
       .then (res => {
         if(!res.ok)
         throw Error('Could not fetch the data');
@@ -57,7 +57,7 @@ const _Venue = () => {
           {schedule ? "Schedules" : "No Schedule Found"}
             </h1>
             <hr />
-          <div className="card-body" style={{ height: "100vh", overflow: "auto" }}>
+          <div className="card-body" style={{ height: "75vh", overflow: "auto" }}>
           <table id="sched-table" className="table table-striped table-hover table-bordered">
             <thead className="bg-info">
               <tr>
