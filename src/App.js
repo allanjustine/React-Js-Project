@@ -7,6 +7,7 @@ import Venue from './venue-pages/Venue';
 import _Venue from './venue-pages/_Venue';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
+import Schedules from './venue-pages/Schedules';
 
 function App() {
   return (
@@ -60,6 +61,9 @@ function App() {
                         </Route>
                         <Route exact path="/venues/:id">
                           <_Venue />
+                        </Route>
+                        <Route excat path="/schedules">
+                          <Schedules />
                         </Route>
                       </Switch>
                   </div>
