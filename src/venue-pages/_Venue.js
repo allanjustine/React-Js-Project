@@ -76,9 +76,9 @@ const _Venue = () => {
             {isPending && (
            <tr><td colSpan="6"> <i class="fa fa-spinner" aria-hidden="true" id="loading"><h2>Loading...</h2></i> </td></tr>
             )}
-              {Object.keys(schedule)?.map((sched, index) => {
+              {Object.keys(schedule)?.map((sched) => {
                 return (
-                    <tr key={index}>
+                    <tr key={sched}>
                       <td>{schedule[sched].id}</td>
                       <td>{schedule[sched].course_no}</td>
                       <td>{schedule[sched].description}</td>

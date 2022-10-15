@@ -34,7 +34,7 @@ const Venue = () => {
           <div className="card" id="card">
           <h2 className="text-center mt-3">MDC Venues</h2>
                 <hr />
-                <Link to={`#`}><div className='btn btn-primary btn-sm float-end mb-2'>Add Venue</div></Link>
+                <Link to={`#`}><div className='btn btn-primary btn-sm float-end m-2'>Add Venue</div></Link>
               <div className="card-body" style={{ height: "75vh", overflow: "auto" }}>
                   <table className="table table-striped table-hover table-bordered">
                     <thead className='bg-info'>
@@ -49,9 +49,9 @@ const Venue = () => {
                     <tbody>
                       {isPending && (<tr><td colSpan="6"> <i class="fa fa-spinner" aria-hidden="true" id="loading"><h2>Loading...</h2></i></td></tr>)}
                       {error && (<tr><td colSpan="6"> <i class="fa fa-times" aria-hidden="true" id="unavailable"><h2>{ error }</h2></i></td></tr>)}
-                      {Object.keys(data)?.map((venue, index) => {
+                      {Object.keys(data)?.map((venue) => {
                       return (
-                      <tr key={index}>
+                      <tr key={venue}>
                         <td>{data[venue].id}</td>
                         <td>{data[venue].name}</td>
                         <td>{data[venue].building}</td>
