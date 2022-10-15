@@ -34,7 +34,7 @@ const Venue = () => {
           <div className="card" id="card">
           <h2 className="text-center mt-3">MDC Venues</h2>
                 <hr />
-                <Link to={`#`}><div className='btn btn-primary btn-sm float-end m-2'>Add Venue</div></Link>
+                <Link to={`/venues`}><div className='btn btn-primary btn-sm float-end m-2'>Add Venue</div></Link>
               <div className="card-body" style={{ height: "75vh", overflow: "auto" }}>
                   <table className="table table-striped table-hover table-bordered">
                     <thead className='bg-info'>
