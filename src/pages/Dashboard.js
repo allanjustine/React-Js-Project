@@ -7,11 +7,16 @@ const Dashboard = () => {
                 <div className="col">
                     <Link to="/venues" className='linkk'>
                     <div className="card" id="cardd">
-                    
                         <div className="card-body text-center" id="card-bodyyy">
-                        <i class="fa fa-university" aria-hidden="true" id="dash-icon"></i>
-                            <h3>Venues</h3>
-                            <p>200 venues</p>
+                            <div className="row">
+                                <div className="col">
+                                    <i class="fa fa-university" aria-hidden="true" id="dash-icon"></i>
+                                </div>
+                                <div className="col mt-4">
+                                    <span id="data">Venues</span><br />
+                                    <span id="data1">200 venues</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     </Link>
@@ -20,9 +25,15 @@ const Dashboard = () => {
                     <Link to="/schedules" className='linkk'>
                     <div className="card" id="cardd">
                         <div className="card-body text-center" id="card-bodyyy">
-                        <i class="fa fa-list-alt" aria-hidden="true" id="dash-icon"></i>
-                            <h3>Schedules</h3>
-                            <p>150 schedules</p>
+                            <div className="row">
+                                <div className="col">
+                                    <i class="fa fa-list-alt" aria-hidden="true" id="dash-icon"></i>
+                                </div>
+                                <div className="col mt-4">
+                                    <span id="data">Schedules</span><br />
+                                    <span id="data1">150 schedules</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     </Link>
@@ -31,9 +42,15 @@ const Dashboard = () => {
                     <Link to="/visitors" className='linkk'>
                     <div className="card" id="cardd">
                         <div className="card-body text-center" id="card-bodyyy">
-                        <i class="fa fa-users" aria-hidden="true" id="dash-icon"></i>
-                            <h3>Visitors</h3>
-                            <p>1,000 visitors</p>
+                        <div className="row">
+                                <div className="col">
+                                    <i class="fa fa-users" aria-hidden="true" id="dash-icon"></i>
+                                </div>
+                                <div className="col mt-4">
+                                    <span id="data">Visitors</span><br />
+                                    <span id="data1">1,000 visitors</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     </Link>

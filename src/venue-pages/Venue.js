@@ -32,7 +32,7 @@ const Venue = () => {
       <div className="row">
         <div className="col-md-12">
           <div className="card" id="card">
-          <h2 className="text-center mt-3">MDC Venues</h2>
+          <h2 className="text-center mt-3"><span className="brandd2">Mater Dei College</span> Venues</h2>
                 <hr />
                 <Link to={`/venues`}><div className='btn btn-primary btn-sm float-end m-2'>Add Venue</div></Link>
               <div className="card-body shadow" style={{ height: "75vh", overflow: "auto" }}>

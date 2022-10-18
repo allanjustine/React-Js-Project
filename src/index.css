@@ -59,6 +59,11 @@ table thead th {
   color: rgb(4, 9, 160);
   font-size: 100px;
 }
+.brandd2 {
+  font-family: "Old English Text MT";
+  color: rgb(4, 9, 160);
+  font-size: 35px;
+}
 #tag {
   border-bottom: 1px solid rgba(218, 216, 216, 0.56);
 }
@@ -150,7 +155,7 @@ table thead th {
 #card-bodyyy {
   background-color: #47cee3;
   color: white;
-  height: 170px;
+  height: 150px;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -164,12 +169,27 @@ table thead th {
   transition: transform ease 0.5s;
 }
 #dash-icon {
-  font-size: 50px;
-  color: #00444f;
+  font-size: 80px;
+  color: #00454f50;
+  margin-top: 20px;
 }
 #cardd {
   border-radius: 10px;
+  width: 300px;
+  margin-bottom: 5px;
+  margin-left: 10%;
 }
 .linkk {
   text-decoration: none;
+}
+#data {
+  font-size: 30px;
+  font-weight: bold;
+}
+#data1 {
+  font-size: 17px;
+  opacity: 0.7;
+  font-weight: 600;
+  font-style: italic;
+  color: black;
 }
