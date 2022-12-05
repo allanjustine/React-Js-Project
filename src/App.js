@@ -8,6 +8,9 @@ import _Venue from './venue-pages/_Venue';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import Schedules from './venue-pages/Schedules';
+import Student from './student-pages/Student';
+import {Link} from 'react-router-dom';
+import StudentContextProvider from './contexts/StudentContext';
 
 function App() {
   return (
@@ -18,26 +21,30 @@ function App() {
               <div class="row flex-nowrap">
                   <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0" id="sidebar">
                       <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                          <a href="/" id="tag" class="d-flex align-items-center pb-1 mb-md-0 me-md-auto text-white text-decoration-none">
+                          <Link to="/" id="tag" class="d-flex align-items-center pb-1 mb-md-0 me-md-auto text-white text-decoration-none">
                           <img className='logoo' src={logo} title="MDC logo"></img><span class="fs-5 d-none d-sm-inline mt-3"><p className="brandd">Mater Dei College</p></span>
-                          </a>
+                          </Link>
                           <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                               <li class="nav-item">
-                                  <a href="/dashboard" class="nav-link align-middle px-0">
+                                  <Link to="/dashboard" class="nav-link align-middle px-0">
                                       <i class="fa fa-tachometer" aria-hidden="true" id="iconn"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
-                                  </a>
+                                  </Link>
                               </li>
                               <li class="nav-item">
-                                  <a href="/visitors" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                      <i class="fa fa-user" aria-hidden="true" id="iconn"></i> <span class="ms-1 d-none d-sm-inline">Visitors</span> </a>
+                                  <Link to="/visitors" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                      <i class="fa fa-user" aria-hidden="true" id="iconn"></i> <span class="ms-1 d-none d-sm-inline">Visitors</span> </Link>
                               </li>
                               <li class="nav-item">
-                                  <a href="/venues" class="nav-link px-0 align-middle">
-                                      <i class="fa fa-university" aria-hidden="true" id="iconn"></i> <span class="ms-1 d-none d-sm-inline">Venues</span></a>
+                                  <Link to="/venues" class="nav-link px-0 align-middle">
+                                      <i class="fa fa-university" aria-hidden="true" id="iconn"></i> <span class="ms-1 d-none d-sm-inline">Venues</span></Link>
                               </li>
                               <li class="nav-item">
-                                  <a href="/about" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                      <i class="fa fa-users" aria-hidden="true" id="iconn"></i> <span class="ms-1 d-none d-sm-inline">About Us</span></a>
+                                  <Link to="/students" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                      <i class="fa fa-user" aria-hidden="true" id="iconn"></i> <span class="ms-1 d-none d-sm-inline">Students</span></Link>
+                              </li>
+                              <li class="nav-item">
+                                  <Link to="/about" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                      <i class="fa fa-users" aria-hidden="true" id="iconn"></i> <span class="ms-1 d-none d-sm-inline">About Us</span></Link>
                               </li>
                               </ul>
                       </div>
@@ -64,6 +71,11 @@ function App() {
                         </Route>
                         <Route excat path="/schedules">
                           <Schedules />
+                        </Route>
+                        <Route excat path="/students">
+                          <StudentContextProvider>
+                            <Student />
+                          </StudentContextProvider>
                         </Route>
                       </Switch>
                   </div>

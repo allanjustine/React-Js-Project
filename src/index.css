@@ -44,7 +44,7 @@ table thead th {
   background-color: rgba(104, 94, 94, 0.596);
 }
 .btn i {
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
 }
 #submit {
@@ -112,9 +112,6 @@ table thead th {
 #unavailable {
   font-size: 60px;
 }
-#loading {
-  font-size: 40px;
-}
 .view {
   font-size: 22px;
   color: black;
@@ -151,11 +148,12 @@ table thead th {
   background-position-x: center;
   margin-top: -10px;
   overflow: hidden;
+  opacity: 0.8;
 }
 #card-bodyyy {
   background-color: #47cee3;
   color: white;
-  height: 150px;
+  height: 120px;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -169,13 +167,13 @@ table thead th {
   transition: transform ease 0.5s;
 }
 #dash-icon {
-  font-size: 80px;
+  font-size: 40px;
   color: #00454f50;
   margin-top: 20px;
 }
 #cardd {
   border-radius: 10px;
-  width: 300px;
+  width: 230px;
   margin-bottom: 5px;
   margin-left: 10%;
 }
@@ -183,13 +181,52 @@ table thead th {
   text-decoration: none;
 }
 #data {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
 }
 #data1 {
-  font-size: 17px;
+  font-size: 13px;
   opacity: 0.7;
   font-weight: 600;
   font-style: italic;
   color: black;
+}
+.loading {
+  border: 5px solid rgb(195, 195, 179);
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: rotate 0.8s linear infinite;
+}
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#load {
+  margin: 0px auto;
+}
+#delete {
+  color: rgb(237, 237, 237);
+}
+#edit {
+  color: rgb(237, 237, 237);
+}
+#delete-button {
+  background-color: rgb(199, 6, 6);
+  padding: 6px 7px;
+  margin-left: 10px;
+}
+#delete-button:hover {
+  background-color: rgb(126, 6, 6);
+}
+#edit-button {
+  background-color: rgb(17, 31, 193);
+  padding: 6px 7px;
+}
+#edit-button:hover {
+  background-color: rgb(37, 5, 142);
+}
+.modal-title h3{
+  margin-left: 150px;
 }

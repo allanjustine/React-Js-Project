@@ -24,5 +24,15 @@
             "date": "Sep 12, 2022",
             "id": 4
         }
+    ],
+
+    "students": [
+        {
+            "name": "Allan Justine Mascariñas",
+            "address": "Tinangnan, Tubigon, Bohol",
+            "email": "allan@gmail.com",
+            "contactNumber": "09091231234",
+            "id": 1
+        }
     ]
 }

@@ -39,7 +39,7 @@ const VisitorIndex = () => {
             </div>
             <div className="col-md-9">
                 { error && <div><i class="fa fa-times" aria-hidden="true"></i> { error }</div> }
-                { isPending && <div><i class="fa fa-spinner" aria-hidden="true"></i> Loading...</div> }
+                { isPending && <div><div className="loading"></div></div> }
                 {visitors && <VisitorTable visitors={visitors} handleDelete={handleDelete} />}
             </div>
         </div>

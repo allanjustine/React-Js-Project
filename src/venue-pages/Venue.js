@@ -47,7 +47,7 @@ const Venue = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {isPending && (<tr><td colSpan="6"> <i class="fa fa-spinner" aria-hidden="true" id="loading"><h2>Loading...</h2></i></td></tr>)}
+                      {isPending && (<tr><td colSpan="6"><div className="loading" id="load"></div></td></tr>)}
                       {error && (<tr><td colSpan="6"> <i class="fa fa-times" aria-hidden="true" id="unavailable"><h2>{ error }</h2></i></td></tr>)}
                       {Object.keys(data)?.map((venue) => {
                       return (
