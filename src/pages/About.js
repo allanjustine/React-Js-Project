@@ -1,4 +1,5 @@
 import image from '../assets/mdc-memorial-wall.png'
+import Carousel from 'react-bootstrap/Carousel';
 const About = () => {
     return (
         <div>
@@ -6,7 +7,17 @@ const About = () => {
                 About Mater Dei College
             </h1>
             <div style={{ height: "90vh", overflow: "auto" }}>
-                <img src={image} alt="image" title='mdc memorial wall' className='mt-3 mx-auto d-block' />
+                <Carousel>
+                    <Carousel.Item interval={1000}>
+                        <img src={image} alt="image" title='mdc memorial wall' className='mt-3 mx-auto d-block' />
+                    </Carousel.Item>
+                    <Carousel.Item interval={500}>
+                        <img src={image} alt="image" title='mdc memorial wall' className='mt-3 mx-auto d-block' />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src={image} alt="image" title='mdc memorial wall' className='mt-3 mx-auto d-block' />
+                    </Carousel.Item>
+                </Carousel>
                 <div className="card mt-5">
                     <div className="card-body">
                         <h5>Mater Dei College</h5>

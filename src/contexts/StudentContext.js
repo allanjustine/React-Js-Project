@@ -1,13 +1,19 @@
+import { useEffect } from 'react';
 import {createContext, useState} from 'react';
 import {v4 as uuidv4} from 'uuid';
 
 export const StudentContext = createContext()
+function getInitialState() {
+  const students = localStorage.getItem('students')
+  return students ? JSON.parse(students) : []
+}
 
 const StudentContextProvider = (props) => {
-    const [students, setStudents] = useState([
-        {id: uuidv4(), name: 'Allan Justine Mascariñas', address: 'Tinangnan, Tubigon, Bohol', email: 'allan@gmail.com', contactNumber: '09123456789'},
-        {id: uuidv4(), name: 'Ian Gabriel Dupa', address: 'Ilijan Norte', email: 'iangabriel@gmail.com', contactNumber: '092138522215'}
-    ]);
+    const [students, setStudents] = useState(getInitialState);
+
+    useEffect(() => {
+        localStorage.setItem('students', JSON.stringify(students))
+      }, [students])
 
 const addStudent = (name, address, email, contactNumber) => {
     setStudents([...students, {id:uuidv4(), name, email, address, contactNumber}])
